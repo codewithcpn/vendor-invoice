@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tax Invoice</title>
+  <style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 5px;
+      padding: 0;
+      color: #000;      
+      background-color: #fff;
+    }
+
+    .container {
+      width: 100%;
+      margin: auto;
+      padding: 0px;
+      border: 1px solid #000;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Header Section */
+    .header {
+      text-align: center;    
+      padding-bottom: 1px;
+    }
+
+    .header h1 {
+      margin: 0;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .header p {
+      margin: 5px 0;
+      font-size: 12px;
+    }
+
+    .invoice-title {
+      text-align: center;
+      padding-top:2px;
+      padding-bottom:2px;   
+      font-size: 12px;
+      font-weight: bold;
+      background-color:#ddd;
+      border-top:1px solid #000;
+     
+    }
+
+    .invoice-title .copy {
+      text-align: right;
+      font-size: 10px;
+      float: right;
+    }
+
+.details {
+  border-top: 1px solid #000;
+  display: flex; 
+  justify-content: space-between;
+}
+
+.details .left,
+.details .right {
+  display: inline-block;
+  vertical-align: top;
+  width: 45%;
+  margin-bottom:5px;
+}
+
+.details .right {
+  text-align: right;
+}
+
+.details p {
+  margin: 5px 0;
+  font-size: 12px;
+  color: #444;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table th, table td {
+  padding: 5px;
+  font-size: 10px;
+  text-align: center;
+}
+
+table th {
+  background-color: #f2f2f2;
+}
+
+.bill {
+  border-top: 1px solid #000;
+  display: flex; 
+  justify-content: space-between;
+}
+
+.bill .billLeft, {
+  display: inline-block;
+  vertical-align: top;
+  width: 66%;
+  
+}
+
+.bill .billRight {
+  display: inline-block;
+  text-align: right;
+  vertical-align: top;
+  width: 28%;
+}
+
+.bill p {
+  margin: 5px 0;
+  font-size: 10px;
+  color: #444;
+}
+
+.terms {
+  border-top: 1px solid #000;
+  display: flex; 
+  justify-content: space-between;
+}
+
+.terms .termsLeft {
+  display: inline-block;
+  vertical-align: top;
+  width: 63%; /* Left section takes 45% of the width */
+   
+}
+
+.terms .termsRight {
+  display: inline-block;
+  vertical-align: top;
+  width: 28%; /* Right section takes 50% of the width */  
+  text-align: right; /* Text alignment for the right section */
+  
+}
+
+.terms .termsLeft ul li {
+  font-size: 10px !important;
+  line-height:15px;
+  list-style-type: circle;
+  padding-left:10px;
+  text-align:justify;
+}
+
+.footer {
+  
+  display: flex; 
+  justify-content: space-between;
+}
+
+.footer .footerLeft {
+  display: inline-block;
+  vertical-align: top;
+  width: 45%; /* Left section takes 45% of the width */
+  padding: 2px;  
+}
+
+.footer .footerRight {
+  display: inline-block;
+  vertical-align: top;
+  width: 45%; /* Right section takes 50% of the width */
+  padding: 2px;
+  text-align: right; /* Text alignment for the right section */
+  
+}
+</style>
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <div class="header">
+      <h1 style="padding-top:5px">Efficient Electricals</h1>
+      <p>Plot No-5, Main Road, Om Vihar Phase-1, Near Metro Pillar No. 702, Uttam Nagar</p>
+      <p>New Delhi, Delhi-110059, India
+      <p>Phone: 7428592378 | Email: efficientelectricals2024@gmail.com</p>
+      </p>
+     
+      <table style="border-collapse: collapse; border: none !important;">
+          <tr>
+              <td style="text-align:left; border: none !important;">GST No: 0000000</td>
+              <td style="text-align:right; border: none !important;">Website: www.efficientelectricals.com</td>
+          </tr>
+      </table>
+    </div>
+    
+
+    <!-- Invoice Title -->
+    <div class="invoice-title">
+      <span style="padding-left:5px; letter-spacing:1px">TAX INVOICE</span>
+      <span  class="copy" style="padding-right:5px">Copy: ORIGINAL</span>
+    </div>
+
+    <!-- Customer Details -->
+    <div class="details" style="border-top: 1px solid #000;">
+      <!-- Outer Div -->
+      <div style="display: flex; justify-content: space-between;">
+        <!-- Left Section -->
+        <div class="left" style="flex: 1; border-right: 1px solid #000;  padding: 10px;">
+          <p style="font-size:11px; font-weight:600">Manish Interprises pvt Ltde</p>
+          <p style="font-size:11px">Person Name: Manish Sinhae</p>
+          <p style="font-size:11px">GST No: JJNFDFKN754781</p>
+          <p style="font-size:11px">Address : Agrae, Agrae, Uttar Pradeshe-2820061, India</p>
+          <p><span>Phone No: 9999999991</span> <span>Email: test@gmail.com</span></p>
+        </div>
+        <!-- Right Section -->
+        <div class="right" style="flex: 1;  padding: 10px;">
+          <table style="width: 100%; border: none; border-collapse: collapse;">
+            <tr>
+              <td style="text-align:left; font-size:11px">Invoice No:</td>
+              <td style="text-align:left; font-size:11px">EII001</td>
+              <td style="text-align:left; font-size:11px">Invoice Date:</td>
+              <td style="text-align:left; font-size:11px">21-Oct-2024</td>
+            </tr> 
+            <tr style="text-align:left">
+              <td style="text-align:left; font-size:11px">Delivery Date:</td>
+              <td style="text-align:left; font-size:11px">21-Oct-2024</td>
+              <td style="text-align:left; font-size:11px">Store Location:</td>
+              <td style="text-align:left; font-size:11px">Agra</td>
+            </tr>          
+            <tr>
+              <td style="text-align:left; font-size:11px">Delivery Term:</td>
+              <td style="text-align:left; font-size:11px">Testing GRT</td>
+            </tr>
+            <tr>
+              <td style="text-align:left; font-size:11px">Payment Term:</td>
+              <td style="text-align:left; font-size:11px">Testing</td>
+            </tr>
+          </table>
+        </div>
+      </div> <!-- End Outer Div -->
+    </div> <!-- End Details -->
+
+
+    <!-- Items Table -->
+    <div class="items" style="border-top:1px solid #000; padding-bottom:40px">
+      <table>
+        <thead>
+          <tr>
+            <th style="padding-top:10px; padding-bottom:10px; text-align:left; letter-spacing:0.4">Product Name</th>
+            <th style="padding-top:10px; padding-bottom:10px; text-align:left; letter-spacing:0.4">Batch No</th>
+            <th style="padding-top:10px; padding-bottom:10px; text-align:left; letter-spacing:0.4 ">HSN Code</th>
+            <th style="padding-top:10px; padding-bottom:10px; text-align:left; letter-spacing:0.4">MFG Date</th>
+            <th style="padding-top:10px; padding-bottom:10px; text-align:left; letter-spacing:0.4">EXP Date</th>
+            <th style="padding-top:10px; padding-bottom:10px; text-align:left; letter-spacing:0.4">Unit</th>
+            <th style="padding-top:10px; padding-bottom:10px; text-align:left; letter-spacing:0.4">Quantity</th>
+            <th style="padding-top:10px; padding-bottom:10px; text-align:left; letter-spacing:0.4">U.Price</th>
+            <th style="padding-top:10px; padding-bottom:10px; text-align:left; letter-spacing:0.4">Amount</th>
+            <th style="padding-top:10px; padding-bottom:10px; text-align:left; letter-spacing:0.4">Discount</th>
+            <th style="padding-top:10px; padding-bottom:10px; text-align:left; letter-spacing:0.4">Tax</th>
+            <th style="padding-top:10px; padding-bottom:10px; text-align:left; letter-spacing:0.4">Grand Total</th>
+          </tr>
+        </thead>     
+
+        <tbody>
+          <tr>
+            <td style="font-size:11px; text-align:left">OLED</td>
+            <td style="font-size:11px; text-align:left">6594</td>
+            <td style="font-size:11px; text-align:left">N/A</td>
+            <td style="font-size:11px; text-align:left">15-Oct-2024</td>
+            <td style="font-size:11px; text-align:left">23-Sep-2024</td>
+            <td style="font-size:11px; text-align:left">NOS</td>
+            <td style="font-size:11px; text-align:left">13</td>
+            <td style="font-size:11px; text-align:left">₹12.00</td>
+            <td style="font-size:11px; text-align:left">₹156.00</td>
+            <td style="font-size:11px; text-align:left">₹20.00</td>
+            <td style="font-size:11px; text-align:left">₹0.00</td>
+            <td style="font-size:11px; text-align:left">₹136.00</td>
+          </tr>
+         
+        </tbody>
+      </table>
+    </div>  <!-- end itesm table -->  
+
+
+    <!-- Total Amount & Bank Details -->
+     <div class="bill" style="border-top: 1px solid #000;">
+      <!-- Outer Div -->
+      <div style="display: flex; justify-content: space-between;">
+        <!-- Left Section -->
+        <div class="billLeft" style="flex: 1; border-right: 1px solid #000;">
+          <p style="font-size:11px; text-align:center; font-weight:600">Paid Amount in Words.</p>
+          <p style=" font-size:11px; text-align:center">One thousand Five hundred and Seventy-Nine rupees only</p>
+          <h6 style="background:#ddd; padding-top:4px; padding-bottom:4px; text-align:center; letter-specing:1px">Bank Details</h6>          
+          <p style="font-size:11px; text-align:left; padding-left:10px;"><strong>Bank Name: Punjab India Bank</strong></p>         
+          <p style="font-size:11px; text-align:left; padding-left:10px;">Person Name: Manish Sinha</p>
+          <p style="font-size:11px; text-align:left; padding-left:10px;">Account No: 89573356145263 IFSC Code: SBIN333432</p>
+          <p style="font-size:11px; text-align:left; padding-left:10px;">Swift Code: JHSDS74738, UPI: 8957335614@paytm</p>    
+          
+        </div>
+        <!-- Right Section -->
+        <div class="billRight" style="flex: 1;">
+          <table style="width: 100%; border: none; border-collapse: collapse; line-height:5px">
+            <tr>
+              <td style="text-align:left; font-size:11px; padding-top:15px; letter-specing:1.5px">Total Bill Amt :</td>
+              <td style="text-align:left; font-size:11px; font-weight:600; letter-specing:1.5px">₹ 1,632.00</td>              
+            </tr>           
+            <tr>
+              <td style="text-align:left; font-size:11px;">Total Discount:</td>
+              <td style="text-align:left; font-size:11px; font-weight:600">₹ 1,253.00</td>
+            </tr>
+            <tr>
+              <td style="text-align:left; font-size:11px;">Total Net Amount:</td>
+              <td style="text-align:left; font-size:11px; font-weight:600">₹ 379.00</td>
+            </tr>
+            <tr>
+              <td style="text-align:left; font-size:11px;">Shipping Amt:</td>
+              <td style="text-align:left; font-size:11px; font-weight:600">₹ 1,200.00</td>
+            </tr>
+            <tr>
+              <td style="text-align:left; font-size:11px;">Total Tax Amt:</td>
+              <td style="text-align:left; font-size:11px; font-weight:600">₹ 0.00</td>
+            </tr>
+            <tr>
+              <td style="text-align:left; font-size:11px;">Paid Amt:</td>
+              <td style="text-align:left; font-size:11px; font-weight:600">₹ 1,579.00</td>
+            </tr>
+            <tr>
+              <td style="text-align:left; font-size:11px;">Balance Amt:</td>
+              <td style="text-align:left; font-size:11px; font-weight:600">₹ 0.00</td>
+            </tr>
+            <tr>
+              <td style="text-align:left; font-size:11px;">Total Net Amount :</td>
+              <td style="text-align:left; font-size:11px; font-weight:600">₹ 379.00</td>
+            </tr>
+            <tr>
+              <td style="text-align:left; font-size:11px;">Total Net Amount :</td>
+              <td style="text-align:left; font-size:11px; font-weight:600">₹ 379.00</td>
+            </tr>
+          </table>
+        </div>
+      </div> <!-- End Outer Div -->
+    </div> <!-- End Details -->
+
+    <!-- Terms & Conditions & Singnature -->
+    <div class="terms" style="border-top: 1px solid #000;">
+      <!-- Outer Div -->
+      <div style="display: flex; justify-content: space-between;">
+        <!-- Left Section -->
+        <div class="termsLeft" style="flex: 1; border-right: 1px solid #000;  padding: 10px;">         
+          <h5 style="padding-top:5px; padding-bottom:5px; text-align:center; letter-specing:1px">Terms & Consitions</h5>          
+          <ul>
+            <li>Paymentis due within 15 days from the date of invoice, unless otherwise agreed upon in writing.</li>
+            <li>Alate fee of 2% per month will be applied to overdue balances. In case of non-payment, legal actions may be taken to recover the outstanding amount</li>
+            <li>Any disputes regarding the invoice must be reported within 2 days from the invoice date. Failure to do so will be considered acceptance of the invoice.</li>
+            <li>All applicable taxes, including GST, service tax, and any other charges, will be added to the total invoice amount. Itis the client's responsibility to ensure the proper tax
+            identification is provided</li>
+            <li>Cancellations or modifications to services must be made in writing at least 5 days in advance. Refunds will be processed based on the cancellation policy outlined in the
+            contract</li>
+            <li>The ownership of goods/services remains with the seller until full payment has been received. Any risk of loss or damage passes to the buyer once the goods are delivered.</li>
+            <li>This invoice and its terms are governed by the laws of India. Any legal action or proceedings related to this invoice will be conducted in the courts of India.</li>
+            <li>This invoice is non-transferable and non-assignable without prior written consent from the seller.</li>            
+          </ul>
+          
+        </div>
+        <!-- Right Section -->
+        <div class="termsRight" style="flex: 6; padding: 1px;">
+          <p style="font-size:8px; padding-top:8px">Certify that the particulars given above are true and correct.</p>
+          <h5 style="padding-top:6px; text-align:center; letter-specing:1px">For Company</h5> 
+          <p style="padding-top:180px;  text-align:center; font-size:14px; letter-specing:1px">Authorized Signatory</p> 
+        </div>
+
+      </div> <!-- End Outer Div -->
+    </div> <!-- End Details -->
+
+
+
+  </div> <!-- end container -->
+
+   <!-- Footer -->
+   <div class="footer">
+      <!-- Outer Div -->
+      <div style="display: flex; justify-content: space-between;">
+        <!-- Left Section -->
+        <div class="footerLeft" style="flex: 1;   padding: 10px;">   
+          <p style="text-align:left; font-size:10px"><i>Software Developedby - Efficient INDIA| IT & Electronic Services Providers</i></p>      
+          
+          
+        </div>
+        <!-- Right Section -->
+        <div class="footerRight" style="flex: 8; padding: 10px;">
+          <p style="text-align:right; font-size:10px"><i>Inventus-Manage Your Inventory Better.</i></p>
+         
+        </div>
+
+      </div> <!-- End Outer Div -->
+    </div> <!-- End Details -->
+
+
+
+
+</body>
+</html>
